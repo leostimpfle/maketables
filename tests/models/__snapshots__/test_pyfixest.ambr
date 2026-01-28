@@ -1,8 +1,8 @@
 # serializer version: 1
 # name: TestPyfixest.test_fixed_effects_html
   '''
-  <div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  <style>
+  &lt;div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;
+  &lt;style&gt;
   #STABLE_ID table {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -27,8 +27,8 @@
    #STABLE_ID .gt_spanner_row { border-bottom-style: hidden; }
    #STABLE_ID .gt_group_heading { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; border-left-style: none; border-left-width: 1px; border-left-color: white; border-right-style: none; border-right-width: 1px; border-right-color: white; vertical-align: middle; text-align: left; }
    #STABLE_ID .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; vertical-align: middle; }
-   #STABLE_ID .gt_from_md> :first-child { margin-top: 0; }
-   #STABLE_ID .gt_from_md> :last-child { margin-bottom: 0; }
+   #STABLE_ID .gt_from_md&gt; :first-child { margin-top: 0; }
+   #STABLE_ID .gt_from_md&gt; :last-child { margin-bottom: 0; }
    #STABLE_ID .gt_row { padding-top: 2px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: none; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 0px; border-left-color: white; border-right-style: none; border-right-width: 0px; border-right-color: white; vertical-align: middle; overflow-x: hidden; }
    #STABLE_ID .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 16px; font-weight: initial; text-transform: inherit; border-right-style: hidden; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
    #STABLE_ID .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
@@ -48,58 +48,58 @@
    #STABLE_ID .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
    #STABLE_ID .gt_asterisk { font-size: 100%; vertical-align: 0; }
    
-  </style>
-  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
+  &lt;/style&gt;
+  &lt;table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"&gt;
+  &lt;thead&gt;
   
-  <tr class="gt_col_headings gt_spanner_row">
-    <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""></th>
-    <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1" scope="col" id="y">
-      <span class="gt_column_spanner">y</span>
-    </th>
-  </tr>
-  <tr class="gt_col_headings">
-    <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0">(1)</th>
-  </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="2">coef</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">x</th>
-      <td class="gt_row gt_center">2.100*** <br> (0.000)</td>
-    </tr>
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="2">fe</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">group</th>
-      <td class="gt_row gt_center">x</td>
-    </tr>
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="2">stats</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">Observations</th>
-      <td class="gt_row gt_center">100</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">R<sup>2</sup></th>
-      <td class="gt_row gt_center">1</td>
-    </tr>
-  </tbody>
-    <tfoot class="gt_sourcenotes">
+  &lt;tr class="gt_col_headings gt_spanner_row"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""&gt;&lt;/th&gt;
+    &lt;th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1" scope="col" id="y"&gt;
+      &lt;span class="gt_column_spanner"&gt;y&lt;/span&gt;
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="gt_col_headings"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0"&gt;(1)&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="gt_table_body"&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="2"&gt;coef&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;x&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;2.100*** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="2"&gt;fe&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;group&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;x&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="2"&gt;stats&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;Observations&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+    &lt;tfoot class="gt_sourcenotes"&gt;
     
-    <tr>
-      <td class="gt_sourcenote" colspan="2">Significance levels: * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01. Format of coefficient cell: Coefficient   (Std. Error)</td>
-    </tr>
+    &lt;tr&gt;
+      &lt;td class="gt_sourcenote" colspan="2"&gt;Significance levels: * $p &lt; 0.1$, ** $p &lt; 0.05$, *** $p &lt; 0.01$. Format of coefficient cell: Coefficient   (Std. Error)&lt;/td&gt;
+    &lt;/tr&gt;
   
-  </tfoot>
+  &lt;/tfoot&gt;
   
-  </table>
+  &lt;/table&gt;
   
-  </div>
+  &lt;/div&gt;
           
   '''
 # ---
@@ -128,21 +128,21 @@
   Observations & 100 \\
   \addlinespace[0.5ex]
   \addlinespace[0.5ex]
-  $R^2$ & 1 \\
+  R² & 1 \\
   \addlinespace[0.5ex]
   \bottomrule
   \end{tabularx}
   \endgroup
   \noindent\begin{minipage}{\linewidth}\smallskip\footnotesize
-  Significance levels: * p < 0.1, ** p < 0.05, *** p < 0.01. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
+  Significance levels: * $p < 0.1$, ** $p < 0.05$, *** $p < 0.01$. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
   
   \end{threeparttable}
   '''
 # ---
 # name: TestPyfixest.test_multi_model_html
   '''
-  <div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  <style>
+  &lt;div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;
+  &lt;style&gt;
   #STABLE_ID table {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -167,8 +167,8 @@
    #STABLE_ID .gt_spanner_row { border-bottom-style: hidden; }
    #STABLE_ID .gt_group_heading { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; border-left-style: none; border-left-width: 1px; border-left-color: white; border-right-style: none; border-right-width: 1px; border-right-color: white; vertical-align: middle; text-align: left; }
    #STABLE_ID .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; vertical-align: middle; }
-   #STABLE_ID .gt_from_md> :first-child { margin-top: 0; }
-   #STABLE_ID .gt_from_md> :last-child { margin-bottom: 0; }
+   #STABLE_ID .gt_from_md&gt; :first-child { margin-top: 0; }
+   #STABLE_ID .gt_from_md&gt; :last-child { margin-bottom: 0; }
    #STABLE_ID .gt_row { padding-top: 2px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: none; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 0px; border-left-color: white; border-right-style: none; border-right-width: 0px; border-right-color: white; vertical-align: middle; overflow-x: hidden; }
    #STABLE_ID .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 16px; font-weight: initial; text-transform: inherit; border-right-style: hidden; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
    #STABLE_ID .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
@@ -188,65 +188,65 @@
    #STABLE_ID .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
    #STABLE_ID .gt_asterisk { font-size: 100%; vertical-align: 0; }
    
-  </style>
-  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
+  &lt;/style&gt;
+  &lt;table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"&gt;
+  &lt;thead&gt;
   
-  <tr class="gt_col_headings gt_spanner_row">
-    <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""></th>
-    <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" scope="colgroup" id="y">
-      <span class="gt_column_spanner">y</span>
-    </th>
-  </tr>
-  <tr class="gt_col_headings">
-    <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0">(1)</th>
-    <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="1">(2)</th>
-  </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="3">coef</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">x</th>
-      <td class="gt_row gt_center">2.100*** <br> (0.000)</td>
-      <td class="gt_row gt_center">2.100*** <br> (0.000)</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">group=B</th>
-      <td class="gt_row gt_center"></td>
-      <td class="gt_row gt_center">-0.000*** <br> (0.000)</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">Intercept</th>
-      <td class="gt_row gt_center">0.000** <br> (0.000)</td>
-      <td class="gt_row gt_center">0.000*** <br> (0.000)</td>
-    </tr>
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="3">stats</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">Observations</th>
-      <td class="gt_row gt_center">100</td>
-      <td class="gt_row gt_center">100</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">R<sup>2</sup></th>
-      <td class="gt_row gt_center">1</td>
-      <td class="gt_row gt_center">1</td>
-    </tr>
-  </tbody>
-    <tfoot class="gt_sourcenotes">
+  &lt;tr class="gt_col_headings gt_spanner_row"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""&gt;&lt;/th&gt;
+    &lt;th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" scope="colgroup" id="y"&gt;
+      &lt;span class="gt_column_spanner"&gt;y&lt;/span&gt;
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="gt_col_headings"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0"&gt;(1)&lt;/th&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="1"&gt;(2)&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="gt_table_body"&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="3"&gt;coef&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;x&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;2.100*** &lt;br&gt; (0.000)&lt;/td&gt;
+      &lt;td class="gt_row gt_center"&gt;2.100*** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;group=B&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;&lt;/td&gt;
+      &lt;td class="gt_row gt_center"&gt;-0.000*** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;Intercept&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;0.000** &lt;br&gt; (0.000)&lt;/td&gt;
+      &lt;td class="gt_row gt_center"&gt;0.000*** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="3"&gt;stats&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;Observations&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;100&lt;/td&gt;
+      &lt;td class="gt_row gt_center"&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;1&lt;/td&gt;
+      &lt;td class="gt_row gt_center"&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+    &lt;tfoot class="gt_sourcenotes"&gt;
     
-    <tr>
-      <td class="gt_sourcenote" colspan="3">Significance levels: * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01. Format of coefficient cell: Coefficient   (Std. Error)</td>
-    </tr>
+    &lt;tr&gt;
+      &lt;td class="gt_sourcenote" colspan="3"&gt;Significance levels: * $p &lt; 0.1$, ** $p &lt; 0.05$, *** $p &lt; 0.01$. Format of coefficient cell: Coefficient   (Std. Error)&lt;/td&gt;
+    &lt;/tr&gt;
   
-  </tfoot>
+  &lt;/tfoot&gt;
   
-  </table>
+  &lt;/table&gt;
   
-  </div>
+  &lt;/div&gt;
           
   '''
 # ---
@@ -277,21 +277,21 @@
   Observations & 100 & 100 \\
   \addlinespace[0.5ex]
   \addlinespace[0.5ex]
-  $R^2$ & 1 & 1 \\
+  R² & 1 & 1 \\
   \addlinespace[0.5ex]
   \bottomrule
   \end{tabularx}
   \endgroup
   \noindent\begin{minipage}{\linewidth}\smallskip\footnotesize
-  Significance levels: * p < 0.1, ** p < 0.05, *** p < 0.01. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
+  Significance levels: * $p < 0.1$, ** $p < 0.05$, *** $p < 0.01$. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
   
   \end{threeparttable}
   '''
 # ---
 # name: TestPyfixest.test_single_model_html
   '''
-  <div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  <style>
+  &lt;div id="STABLE_ID" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;
+  &lt;style&gt;
   #STABLE_ID table {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -316,8 +316,8 @@
    #STABLE_ID .gt_spanner_row { border-bottom-style: hidden; }
    #STABLE_ID .gt_group_heading { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; border-left-style: none; border-left-width: 1px; border-left-color: white; border-right-style: none; border-right-width: 1px; border-right-color: white; vertical-align: middle; text-align: left; }
    #STABLE_ID .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 0px; font-weight: initial; border-top-style: solid; border-top-width: 0.25px; border-top-color: black; border-bottom-style: solid; border-bottom-width: 0.25px; border-bottom-color: black; vertical-align: middle; }
-   #STABLE_ID .gt_from_md> :first-child { margin-top: 0; }
-   #STABLE_ID .gt_from_md> :last-child { margin-bottom: 0; }
+   #STABLE_ID .gt_from_md&gt; :first-child { margin-top: 0; }
+   #STABLE_ID .gt_from_md&gt; :last-child { margin-bottom: 0; }
    #STABLE_ID .gt_row { padding-top: 2px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: none; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 0px; border-left-color: white; border-right-style: none; border-right-width: 0px; border-right-color: white; vertical-align: middle; overflow-x: hidden; }
    #STABLE_ID .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 16px; font-weight: initial; text-transform: inherit; border-right-style: hidden; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
    #STABLE_ID .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
@@ -337,55 +337,55 @@
    #STABLE_ID .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
    #STABLE_ID .gt_asterisk { font-size: 100%; vertical-align: 0; }
    
-  </style>
-  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
+  &lt;/style&gt;
+  &lt;table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"&gt;
+  &lt;thead&gt;
   
-  <tr class="gt_col_headings gt_spanner_row">
-    <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""></th>
-    <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1" scope="col" id="y">
-      <span class="gt_column_spanner">y</span>
-    </th>
-  </tr>
-  <tr class="gt_col_headings">
-    <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0">(1)</th>
-  </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="2">coef</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">x</th>
-      <td class="gt_row gt_center">2.100*** <br> (0.000)</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">Intercept</th>
-      <td class="gt_row gt_center">0.000** <br> (0.000)</td>
-    </tr>
-    <tr class="gt_group_heading_row">
-      <th class="gt_group_heading" colspan="2">stats</th>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">Observations</th>
-      <td class="gt_row gt_center">100</td>
-    </tr>
-    <tr>
-      <th class="gt_row gt_left gt_stub">R<sup>2</sup></th>
-      <td class="gt_row gt_center">1</td>
-    </tr>
-  </tbody>
-    <tfoot class="gt_sourcenotes">
+  &lt;tr class="gt_col_headings gt_spanner_row"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""&gt;&lt;/th&gt;
+    &lt;th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="1" scope="col" id="y"&gt;
+      &lt;span class="gt_column_spanner"&gt;y&lt;/span&gt;
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="gt_col_headings"&gt;
+    &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="0"&gt;(1)&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="gt_table_body"&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="2"&gt;coef&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;x&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;2.100*** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;Intercept&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;0.000** &lt;br&gt; (0.000)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="gt_group_heading_row"&gt;
+      &lt;th class="gt_group_heading" colspan="2"&gt;stats&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;Observations&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class="gt_row gt_left gt_stub"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/th&gt;
+      &lt;td class="gt_row gt_center"&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+    &lt;tfoot class="gt_sourcenotes"&gt;
     
-    <tr>
-      <td class="gt_sourcenote" colspan="2">Significance levels: * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01. Format of coefficient cell: Coefficient   (Std. Error)</td>
-    </tr>
+    &lt;tr&gt;
+      &lt;td class="gt_sourcenote" colspan="2"&gt;Significance levels: * $p &lt; 0.1$, ** $p &lt; 0.05$, *** $p &lt; 0.01$. Format of coefficient cell: Coefficient   (Std. Error)&lt;/td&gt;
+    &lt;/tr&gt;
   
-  </tfoot>
+  &lt;/tfoot&gt;
   
-  </table>
+  &lt;/table&gt;
   
-  </div>
+  &lt;/div&gt;
           
   '''
 # ---
@@ -413,13 +413,13 @@
   Observations & 100 \\
   \addlinespace[0.5ex]
   \addlinespace[0.5ex]
-  $R^2$ & 1 \\
+  R² & 1 \\
   \addlinespace[0.5ex]
   \bottomrule
   \end{tabularx}
   \endgroup
   \noindent\begin{minipage}{\linewidth}\smallskip\footnotesize
-  Significance levels: * p < 0.1, ** p < 0.05, *** p < 0.01. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
+  Significance levels: * $p < 0.1$, ** $p < 0.05$, *** $p < 0.01$. Format of coefficient cell: Coefficient   (Std. Error)\end{minipage}
   
   \end{threeparttable}
   '''

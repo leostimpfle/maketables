@@ -352,7 +352,7 @@ class ETable(MTable):
             # Only add significance levels explanation if format string contains stars
             if "*" in coef_fmt:
                 note_parts.append(
-                    f"Significance levels: * p < {signif_code[2]}, ** p < {signif_code[1]}, *** p < {signif_code[0]}."
+                    f"Significance levels: * $p < {signif_code[2]}$, ** $p < {signif_code[1]}$, *** $p < {signif_code[0]}$."
                 )
             note_parts.append(f"Format of coefficient cell: {coef_fmt_title}")
             notes = " ".join(note_parts)
@@ -568,7 +568,7 @@ class ETable(MTable):
         # relabel coefficient index
         if (labels != {}) or (cat_template != ""):
             res.index = res.index.to_series().apply(
-                lambda x: _relabel_expvar(x, labels or {}, " × ", cat_template)
+                lambda x: _relabel_expvar(str(x), labels or {}, " × ", cat_template)
             )
             res.index.name = "Coefficient"
 
