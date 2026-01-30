@@ -400,7 +400,7 @@ def inspect_model(model: Any, long: bool = False) -> None:
     try:
         # Try common stats and collect non-None values
         common_stats = [
-            "N", "events", "ll", "aic", "bic", "concordance",
+            "N", "n_clusters", "events", "ll", "aic", "bic", "concordance",
             "r2", "adj_r2", "r2_within", "pseudo_r2",
             "fvalue", "f_pvalue", "rmse",
             "llr", "llr_df", "llr_p", "llr_log2p",
@@ -622,6 +622,9 @@ class PyFixestExtractor:
     # Build a clean map of unified stat keys -> pyfixest attributes/callables
     STAT_MAP: ClassVar[dict[str, Any]] = {
         "N": "_N",
+        "n_clusters": lambda m: (
+            m._G[0] if hasattr(m, "_G") and m._G and len(m._G) > 0 else None
+        ),
         "se_type": lambda m: (
             "by: " + "+".join(getattr(m, "_clustervar", []))
             if getattr(m, "_vcov_type", None) == "CRV"

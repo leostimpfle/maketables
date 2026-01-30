@@ -133,6 +133,7 @@ class ETable(MTable):
     # Canonical stat key -> printable label (used if model_stats_labels is None)
     DEFAULT_STAT_LABELS: ClassVar[dict[str, str]] = {
         "N": "Observations",
+        "n_clusters": "Clusters",
         "events": "Events",
         "se_type": "S.E. type",
         "r2": "R²",
