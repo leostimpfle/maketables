@@ -9,93 +9,77 @@ translated to the appropriate format (LaTeX, HTML, DOCX, etc.).
 SYMBOLS = {
     # Statistical symbols
     "R²": {
-        "tex": r"R²",         # Unicode superscript
-        "typst": "$R^2$",        # Typst math mode
-        "html": "R<sup>2</sup>", # HTML superscript
-        "docx": "R²",            # Unicode
-        "plain": "R²"
+        "tex": r"$R^2$",         # LaTeX math mode superscript notation
+        "typst": "$R^2$",        # Typst math mode superscript notation
+        "html": "R<sup>2</sup>", # HTML superscript tags (used by GT too)
+        "docx": "R²",            # Unicode works in Word
+        "plain": "R²"           # Plain text notation
     },
 
     # Interaction symbol
     "×": {
-        "tex": r"×",          # Unicode times
-        "typst": "$times$",      # Typst math mode
-        "html": "&times;",       # HTML entity
+        "tex": r"$\times$",     # LaTeX math mode times symbol
+        "typst": "$times$",     # Typst math mode times symbol
+        "html": "&times;",       # HTML entity (used by GT too)
         "docx": "×",
         "plain": "x"
     },
 
     # Mathematical comparison symbols
     "≤": {
-        "tex": r"≤",          # Unicode
-        "typst": "$≤$",          # Typst math mode
-        "html": "&le;",          # HTML entity
+        "tex": r"$\leq$",       # LaTeX math mode less than or equal
+        "typst": "$≤$",         # Typst math mode
+        "html": "&le;",          # HTML entity (used by GT too)
         "docx": "≤",
         "plain": "<="
     },
 
     "≥": {
-        "tex": r"≥",          # Unicode
-        "typst": "$≥$",          # Typst math mode
-        "html": "&ge;",          # HTML entity
+        "tex": r"$\geq$",       # LaTeX math mode greater than or equal
+        "typst": "$≥$",         # Typst math mode
+        "html": "&ge;",          # HTML entity (used by GT too)
         "docx": "≥",
         "plain": ">="
     },
 
-    "<": {
-        "tex": r"<",             # LaTeX text mode
-        "typst": "$<$",          # Typst math mode
-        "html": "&lt;",          # HTML entity
-        "docx": "<",
-        "plain": "<"
-    },
-
-    ">": {
-        "tex": r">",             # LaTeX text mode
-        "typst": "$>$",          # Typst math mode
-        "html": "&gt;",          # HTML entity
-        "docx": ">",
-        "plain": ">"
-    },
-
     # Greek letters commonly used in statistics
     "α": {
-        "tex": r"α",        # Unicode
-        "typst": "$alpha$",      # Typst math mode
-        "html": "&alpha;",       # HTML entity
+        "tex": r"$\alpha$",     # LaTeX math mode alpha
+        "typst": "$alpha$",     # Typst math mode alpha
+        "html": "&alpha;",       # HTML entity (used by GT too)
         "docx": "α",
         "plain": "alpha"
     },
 
     "β": {
-        "tex": r"β",         # Unicode
-        "typst": "$beta$",       # Typst math mode
-        "html": "&beta;",        # HTML entity
+        "tex": r"$\beta$",      # LaTeX math mode beta
+        "typst": "$beta$",      # Typst math mode beta
+        "html": "&beta;",        # HTML entity (used by GT too)
         "docx": "β",
         "plain": "beta"
     },
 
     "σ": {
-        "tex": r"σ",        # Unicode
-        "typst": "$sigma$",      # Typst math mode
-        "html": "&sigma;",       # HTML entity
+        "tex": r"$\sigma$",     # LaTeX math mode sigma
+        "typst": "$sigma$",     # Typst math mode sigma
+        "html": "&sigma;",       # HTML entity (used by GT too)
         "docx": "σ",
         "plain": "sigma"
     },
 
     # Other common symbols
     "±": {
-        "tex": r"±",           # Unicode
-        "typst": "$plus.minus$", # Typst math mode
-        "html": "&plusmn;",      # HTML entity
+        "tex": r"$\pm$",        # LaTeX math mode plus-minus
+        "typst": "$plus.minus$", # Typst math mode plus-minus
+        "html": "&plusmn;",      # HTML entity (used by GT too)
         "docx": "±",
         "plain": "+/-"
     },
 
     "°": {
-        "tex": r"°",        # Unicode
-        "typst": "$degree$",     # Typst math mode
-        "html": "&deg;",         # HTML entity
+        "tex": r"$^\circ$",     # LaTeX math mode degree symbol
+        "typst": "$degree$",    # Typst math mode degree symbol
+        "html": "&deg;",         # HTML entity (used by GT too)
         "docx": "°",
         "plain": "deg"
     }
