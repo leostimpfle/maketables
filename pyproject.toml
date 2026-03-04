@@ -216,11 +216,12 @@ ignore_missing_imports = true
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "maketables/_version.py"
+version-file = "src/maketables/_version.py"
 
 [tool.hatch.build.targets.sdist]
 exclude = ["tests"]
 only-packages = true
 
 [tool.hatch.build.targets.wheel]
-only-include = ["maketables"]
+only-include = ["src"]
+sources = ["src"]

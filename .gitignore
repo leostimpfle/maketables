@@ -182,7 +182,7 @@ database.db
 objects.json
 
 # Auto-generated version file
-maketables/_version.py
+src/maketables/_version.py
 
 # Quarto
 _site/
