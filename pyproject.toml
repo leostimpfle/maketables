@@ -1,17 +1,17 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+build-backend = "hatchling.build"
+requires = ["hatch-vcs", "hatchling"]
 
 [project]
 name = "maketables"
-version = "0.1.7"
+dynamic = ["version"]
 authors = [
     {name = "Alexander Fischer", email = "alexander-fischer1801@t-online.de"},
     {name = "Dirk Sliwka", email = "dirk.sliwka@uni-koeln.de"},
 ]
 description = "A Python package for creating publication-ready tables from regression results (statsmodels, pyfixest, linearmodels), descriptive statistics, and balance tables with output to LaTeX, Word, and HTML/Great Tables"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 
 keywords = ["tables", "statistics", "regression", "econometrics", "latex", "publication", "pyfixest", "statsmodels"]
@@ -20,11 +20,11 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
 ]
 
@@ -54,8 +54,6 @@ dev = [
     "pyfixest>=0.13.0",
     "statsmodels>=0.13.0",
     "linearmodels>=4.0",
-    "black>=22.0",
-    "flake8>=5.0",
     "mypy>=1.0",
     "pre-commit>=4.3.0,<5",
     "quartodoc>=0.7.0",
@@ -145,8 +143,7 @@ upload = { cmd = "twine upload dist/*", depends-on = ["check"] }
 line-length = 88
 fix = true
 
-# Assume Python 3.12
-target-version = "py312"
+target-version = "py310"
 
 [tool.ruff.lint]
 # docs: https://docs.astral.sh/ruff/rules/
@@ -186,10 +183,6 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**/*.py" = ["D100", "D103"]
-"pyfixest/multcomp.py" = ["D103"]
-"pyfixest/summarize.py" = ["D103"]
-"pyfixest/visualize.py" = ["D103"]
-"scripts/*.py" = ["D103"]
 
 [tool.ruff.lint.pycodestyle]
 max-doc-length = 88
@@ -219,7 +212,16 @@ module = [
 ]
 ignore_missing_imports = true
 
-[tool.setuptools.packages.find]
-where = [""]
-include = ["maketables*"]
-exclude = ["data*", "mystuff*", "latex_output*", "README_files*", "tests*"]
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/maketables/_version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["tests"]
+only-packages = true
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src"]
+sources = ["src"]

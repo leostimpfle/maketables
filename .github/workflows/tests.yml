@@ -30,6 +30,7 @@ jobs:
         with:
           pixi-version: v0.41.4
           cache: true
+          frozen: true
 
       - name: Run tests
         run: pixi run -e dev tests
