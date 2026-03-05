@@ -5,7 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.8]
+
+### Added
+- **Automated PyPI publishing**: New GitHub Actions workflow publishes to PyPI on tagged releases
+- **PEP 561 type marker**: Added `py.typed` for downstream type-checking support
+- **Dependabot**: Monthly automated updates for GitHub Actions dependencies
+- **Number of clusters stat**: pyfixest extractor now reports number of clusters in model statistics
+
+### Changed
+- **Src layout**: Migrated from flat `maketables/` to `src/maketables/` layout
+- **Hatchling build backend**: Switched from setuptools to hatchling with hatch-vcs for git-tag-based versioning
+- **Python version support**: Dropped EOL Python 3.8/3.9; added 3.13 and 3.14
+- **ETable accepts FixestMulti lists**: `ETable` now accepts a list of `FixestMulti` objects in addition to individual models
+- **CI improvements**: Pinned Python 3.13 in test matrix; added `frozen: true` to pixi setup
+
+### Fixed
+- Deterministic test data with fixed seeds to avoid RNG differences across environments
+- pyfixest extractor compatibility with internal API refactors
+
+### Removed
+- Stale build artifacts, output files, and dead references cleaned up from the repository
 
 ## [0.1.7] - 2025-12-22
 
@@ -35,6 +55,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[unreleased]: https://github.com/py-econometrics/maketables/compare/v0.1.7...HEAD
+[0.1.8]: https://github.com/py-econometrics/maketables/compare/v0.1.7...v0.1.8
 [0.1.7]: https://github.com/py-econometrics/maketables/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/py-econometrics/maketables/releases/tag/v0.1.6
