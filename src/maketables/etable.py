@@ -73,6 +73,11 @@ class ETable(MTable):
         Any coefficients not in the list will appear at the end in their original order.
         This is applied after keep/drop filtering.
         Example: order=['age', 'female', 'education'] will place these first.
+    feorder : list[str], optional
+        Explicit order for fixed effects rows. Provide a list of fixed effect names
+        to specify their display order. Any fixed effects not in the list will appear
+        at the end sorted alphabetically.
+        Example: feorder=['f1', 'f2'] will place these first.
     labels : dict, optional
         Variable labels for relabeling dependent vars, regressors, and (if not
         provided in felabels) fixed effects. If None, labels are collected from
@@ -178,6 +183,7 @@ class ETable(MTable):
         drop: list | str | None = None,
         exact_match: bool | None = False,
         order: list[str] | None = None,
+        feorder: list[str] | None = None,
         labels: dict | None = None,
         cat_template: str | None = None,
         show_fe: bool | None = None,
@@ -216,6 +222,7 @@ class ETable(MTable):
         custom_stats = {} if custom_stats is None else custom_stats
         keep = [] if keep is None else keep
         drop = [] if drop is None else drop
+        feorder = [] if feorder is None else list(feorder)
 
         # --- checks  ---
         assert isinstance(signif_code, list) and len(signif_code) == 3
@@ -249,7 +256,7 @@ class ETable(MTable):
         # relabel dependent variables
         if labels:
             dep_var_list = [labels.get(d, d) for d in dep_var_list]
-        fixef_list = self._collect_fixef_list(models, show_fe)
+        fixef_list = self._collect_fixef_list(models, show_fe, feorder=feorder)
 
         # --- bottom model stats keys (modular default) ---
         if model_stats is None:
@@ -459,7 +466,7 @@ class ETable(MTable):
             pass
         return merged
 
-    def _collect_fixef_list(self, models: list[Any], show_fe: bool) -> list[str]:
+    def _collect_fixef_list(self, models: list[Any], show_fe: bool, feorder: list[str] | None = None) -> list[str]:
         if not show_fe:
             return []
         fixef_list: list[str] = []
@@ -468,7 +475,14 @@ class ETable(MTable):
             if fx and fx != "0":
                 fixef_list += fx.split("+")
         fixef_list = [x for x in fixef_list if x]
-        return sorted(set(fixef_list))
+
+        # Apply optional ordering if provided via feorder parameter
+        if feorder is not None:
+            ordered_res = [name for name in feorder if name in fixef_list]
+            remaining = sorted(set(fixef_list) - set(feorder))
+            return ordered_res + remaining
+        else:
+            return sorted(set(fixef_list))
 
     def _compute_stars(self, p: pd.Series, signif_code: list[float]) -> pd.Series:
         if not signif_code:
