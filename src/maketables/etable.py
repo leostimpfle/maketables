@@ -222,7 +222,6 @@ class ETable(MTable):
         custom_stats = {} if custom_stats is None else custom_stats
         keep = [] if keep is None else keep
         drop = [] if drop is None else drop
-        feorder = [] if feorder is None else list(feorder)
 
         # --- checks  ---
         assert isinstance(signif_code, list) and len(signif_code) == 3
