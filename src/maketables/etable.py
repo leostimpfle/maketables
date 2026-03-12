@@ -466,7 +466,7 @@ class ETable(MTable):
         for m in models:
             fx = self._extract_fixef_string(m)
             if fx and fx != "0":
-                fixef_list += fx.split("+")
+                fixef_list += re.split(r"\s*\+\s*", fx)
         fixef_list = [x for x in fixef_list if x]
         return sorted(set(fixef_list))
 
